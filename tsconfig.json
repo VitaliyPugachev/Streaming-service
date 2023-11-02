@@ -1,5 +1,10 @@
 {
+  "include": [
+    "src",
+    "src/app/config/types/global.d.ts"
+  ],
   "compilerOptions": {
+    "baseUrl": "./src",
     "target": "es5",
     "lib": [
       "dom",
@@ -20,7 +25,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": [
-    "src"
-  ]
+
 }
