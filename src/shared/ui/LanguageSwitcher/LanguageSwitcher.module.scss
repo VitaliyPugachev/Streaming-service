@@ -1,0 +1,12 @@
+.LanguageSwitcher {
+    font: var(--font-s);
+    cursor: pointer;
+    margin: 5px;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 25%;
+    transition: all 500ms ease;
+    &:hover {
+        transform: scale(1.2);
+    }
+}

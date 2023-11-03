@@ -4,7 +4,7 @@ declare module '*.scss' {
     };
     export = content;
 }
-
+declare module "*.json"
 declare module "*.svg" {
     import React = require('react');
     export const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>;

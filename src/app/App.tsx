@@ -8,6 +8,7 @@ function App() {
     <div className="App dark_theme">
         <Navbar/>
         <AppRouter/>
+
     </div>
   );
 }
