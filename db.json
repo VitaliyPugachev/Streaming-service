@@ -1,0 +1,271 @@
+{
+  "movies": [
+    {
+      "id": "1",
+      "title": "Аватар",
+      "poster": "https://papik.pro/grafic/uploads/posts/2023-04/1681383842_papik-pro-p-plakat-avatar-2009-19.jpg",
+      "year": "2009",
+      "genre": [
+        "Приключения",
+        "Боевик",
+        "Драма"
+      ],
+      "director": "Джеймс Кэмерон",
+      "country": [
+        "США",
+        "Великобритания"
+      ],
+      "actors": [
+        "Сэм Уорингтон",
+        "Зои Салдана",
+        "Стивен Лэнг",
+        "Мишель Родригес",
+        "Сигурни Уивер"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Зеленая миля",
+      "poster": "http://img-fotki.yandex.ru/get/9830/207600627.7/0_bfed1_8a704d57_XXL.jpg",
+      "year": "1999",
+      "genre": [
+        "Драма",
+        "Фэнтези",
+        "Криминал"
+      ],
+      "director": "Фрэнк Дарабонт",
+      "country": [
+        "США"
+      ],
+      "actors": [
+        "Том Хэнкс",
+        "Дэвид Морс"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Властелин колец: Братство кольца",
+      "poster": "https://sun9-9.userapi.com/impg/B7EIiBIjB9dy32DibMcCHQEB0j1SM8H5CKsIBg/D84aVZ1GsX8.jpg?size=720x1080&quality=96&sign=791ca16b3277b7497f3061d30340741e&c_uniq_tag=bLwdoAERB23sx32SejJbRfggt8EtZpOT6aMFhWyxtk4&type=album",
+      "year": "2001",
+      "genre": [
+        "Приключения",
+        "Фэнтези"
+      ],
+      "director": "Питер Джексон",
+      "country": [
+        "США",
+        "Новая Зеландия"
+      ],
+      "actors": [
+        "Элайджа Вуд",
+        "Иэн МакКеллен"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Титаник",
+      "poster": "https://i.pinimg.com/736x/75/1f/54/751f5482facac19cff49ca5e0a0861cf.jpg",
+      "year": "1997",
+      "genre": [
+        "Драма",
+        "История",
+        "Романтика"
+      ],
+      "director": "Джеймс Кэмерон",
+      "country": [
+        "США"
+      ],
+      "actors": [
+        "Леонардо ДиКаприо",
+        "Кейт Уинслет"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Начало",
+      "poster": "https://4tololo.ru/sites/default/files/images/201308042358489730.jpg?itok=eJ3BPXAW",
+      "year": "2010",
+      "genre": [
+        "Боевик",
+        "Триллер",
+        "Фантастика"
+      ],
+      "director": "Кристофер Нолан",
+      "country": [
+        "США",
+        "Великобритания"
+      ],
+      "actors": [
+        "Леонардо ДиКаприо",
+        "Джозеф Гордон-Левитт"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Унесённые призраками",
+      "poster": "https://www.film.ru/sites/default/files/movies/posters/1610486-2204430.jpg",
+      "year": "2001",
+      "genre": [
+        "Анимация",
+        "Фэнтези"
+      ],
+      "director": "Хаяо Миядзаки",
+      "country": [
+        "Япония"
+      ],
+      "actors": [
+        "Миники Така",
+        "Ика Саваширо"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Бешеные псы",
+      "poster": "https://images-s.kinorium.com/movie/1080/1608804.jpg?1592691809",
+      "year": "1992",
+      "genre": [
+        "Криминал",
+        "Драма",
+        "Триллер"
+      ],
+      "director": "Квентин Тарантино",
+      "country": [
+        "США"
+      ],
+      "actors": [
+        "Тим Рот",
+        "Сэмюэл Л. Джексон"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Форрест Гамп",
+      "poster": "https://artworks.thetvdb.com/banners/v4/movie/294/posters/607b6a4f83abe.jpg",
+      "year": "1994",
+      "genre": [
+        "Драма",
+        "Мелодрама"
+      ],
+      "director": "Роберт Земекис",
+      "country": [
+        "США"
+      ],
+      "actors": [
+        "Том Хэнкс",
+        "Робин Райт"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Звёздные войны: Эпизод 4 – Новая надежда",
+      "poster": "http://images-s.kinorium.com/movie/poster/71037/w1500_3565515.jpg",
+      "year": "1977",
+      "genre": [
+        "Фантастика",
+        "Приключения",
+        "Фэнтези"
+      ],
+      "director": "Джордж Лукас",
+      "country": [
+        "США"
+      ],
+      "actors": [
+        "Марк Хэмилл",
+        "Харрисон Форд"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Крепкий орешек",
+      "poster": "https://www.film.ru/sites/default/files/movies/posters/1614110-1431526.jpg",
+      "year": "1988",
+      "genre": [
+        "Боевик",
+        "Триллер"
+      ],
+      "director": "Джон МакТирнан",
+      "country": [
+        "США"
+      ],
+      "actors": [
+        "Брюс Уиллис",
+        "Алан Рикман"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Храброе сердце",
+      "poster": "https://media.kg-portal.ru/movies/b/braveheart/posters/braveheart_8.jpg",
+      "year": "1995",
+      "genre": [
+        "Боевик",
+        "Драма",
+        "Военный"
+      ],
+      "director": "Мел Гибсон",
+      "country": [
+        "США"
+      ],
+      "actors": [
+        "Мел Гибсон",
+        "Софи Марсо"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Матрица",
+      "poster": "https://i.pinimg.com/736x/c3/8d/09/c38d09658a348f3b6101e9eff348b706.jpg",
+      "year": "1999",
+      "genre": [
+        "Боевик",
+        "Научная фантастика"
+      ],
+      "director": "Братья Вачовски",
+      "country": [
+        "США",
+        "Австралия"
+      ],
+      "actors": [
+        "Киану Ривз",
+        "Лоуренс Фишберн"
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Гладиатор",
+      "poster": "https://media.kg-portal.ru/movies/g/gladiator/posters/gladiator_1.jpg",
+      "year": "2000",
+      "genre": [
+        "Драма",
+        "Боевик",
+        "Приключения"
+      ],
+      "director": "Ридли Скотт",
+      "country": [
+        "США",
+        "Великобритания"
+      ],
+      "actors": [
+        "Рассел Кроу",
+        "Хоакин Феникс"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
