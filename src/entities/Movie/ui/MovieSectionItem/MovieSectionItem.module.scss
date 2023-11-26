@@ -1,0 +1,43 @@
+.MoviesSelectionItem{
+    position: relative;
+    cursor: pointer;
+    background-color: var(--bg-color-accent);
+    font-size: var(--font-size-s);
+    width: 180px;
+    height: 280px;
+    padding: 10px;
+    border-radius: 14px;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: translateY(-2px);
+        opacity: 0.8;
+        & .description {
+            height: 100px;
+        }
+    }
+}
+.imageWrapper{
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.description{
+    position: absolute;
+    bottom: 5px;
+    height: 40px;
+    width: 160px;
+    background: var(--bg-color-accent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    text-align: center;
+    transition: height 0.4s ease;
+}
+
+.img {
+    width: 160px;
+    height: 220px;
+}

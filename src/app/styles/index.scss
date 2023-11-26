@@ -11,3 +11,7 @@ body {
     color: var(--font-color-primary);
     background: var(--bg-color-primary);
 }
+
+.app-content {
+    display: flex;
+}

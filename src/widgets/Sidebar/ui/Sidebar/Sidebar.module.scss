@@ -1,0 +1,27 @@
+.Sidebar {
+    position: relative;
+    height: calc(100vh - var(--navbar-height));
+    padding: 8px 8px 8px 18px;
+    background: var(--bg-color-primary);
+    border: 1px solid white;
+    width: 220px;
+    transition: width 700ms ease;
+}
+
+.collapse_btn {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: -15px;
+    padding: 3px;
+    border-radius: 8px;
+    background: var(--bg-color-secondary);
+}
+.collapsed {
+    width: 60px;
+}
+
+.ItemsList {
+    display: flex;
+    flex-direction: column;
+}

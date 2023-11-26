@@ -3,10 +3,7 @@
     align-items: center;
     border: 2px solid ;
     padding: 10px;
+    height: var(--navbar-height);
 }
 
-.search {
-    margin-left: auto;
-    display: flex;
-    gap: 10px;
-}
+

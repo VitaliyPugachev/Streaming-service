@@ -1,11 +1,14 @@
 .LanguageSwitcher {
+    display: flex;
+    justify-content: center;
     font: var(--font-s);
     cursor: pointer;
-    margin: 5px;
+    margin: 5px 10px;
     padding: 3px;
     border: 1px solid;
     border-radius: 25%;
     transition: all 500ms ease;
+    width: 30px;
     &:hover {
         transform: scale(1.2);
     }

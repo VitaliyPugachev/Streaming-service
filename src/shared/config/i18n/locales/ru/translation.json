@@ -1,4 +1,6 @@
 {
   "SomeText": "Какойто текст",
-  "LANGUAGE": "RU"
+  "LANGUAGE": "RU",
+  "About": "О нас",
+  "Main": "Главная страница"
 }

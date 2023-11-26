@@ -1,14 +1,14 @@
 import cls from './Input.module.scss';
 
-interface InputProps {
-    disabled?: boolean
-    placeholder?: string
+export interface InputProps {
+  disabled?: boolean
+  placeholder?: string
 }
 
-export const Input = (props: InputProps) => {
+export function Input(props: InputProps) {
     const {
         disabled = false,
-        placeholder = ''
+        placeholder = '',
     } = props;
 
     return (
@@ -17,5 +17,5 @@ export const Input = (props: InputProps) => {
             disabled={disabled}
             placeholder={placeholder}
         />
-    )
+    );
 }

@@ -1,20 +1,19 @@
-import {ReactNode, useState} from "react";
-import {Theme, ThemeContext} from "./themeContext";
-
+import { ReactNode, useState } from 'react';
+import { Theme, ThemeContext } from './themeContext';
 
 export interface ThemeProviderProps {
-    children?: ReactNode
+  children?: ReactNode
 }
 
-const ThemeProvider = ({children} : ThemeProviderProps) => {
+function ThemeProvider({ children } : ThemeProviderProps) {
     const [theme, setTheme] = useState(Theme.NORMAL);
-    const {Provider} = ThemeContext;
+    const { Provider } = ThemeContext;
 
     return (
-        <Provider value={{theme, setTheme}}>
+        <Provider value={{ theme, setTheme }}>
             {children}
         </Provider>
-    )
+    );
 }
 
-export default ThemeProvider
+export default ThemeProvider;

@@ -1,12 +1,14 @@
+import { useTranslation } from 'react-i18next';
+import { memo } from 'react';
 import cls from './LanguageSwitcher.module.scss';
-import { useTranslation } from "react-i18next";
 
-export const LanguageSwitcher = () => {
+export const LanguageSwitcher = memo(() => {
     const { t, i18n } = useTranslation();
 
     const toggleLanguage = async () => {
-         await i18n.changeLanguage(i18n.language === 'en' ? 'ru': 'en' )
-    }
+        await i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en');
+    };
+
 
     return (
         <div
@@ -15,5 +17,5 @@ export const LanguageSwitcher = () => {
         >
             {t('LANGUAGE')}
         </div>
-    )
-}
+    );
+});
