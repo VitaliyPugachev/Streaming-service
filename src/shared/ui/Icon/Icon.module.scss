@@ -1,0 +1,8 @@
+.Icon {
+    height: 30px;
+    width: 30px;
+    fill: var(--font-color-primary);
+    &:hover {
+        fill: var(--font-color-accent);
+    }
+}

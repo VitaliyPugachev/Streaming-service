@@ -3,7 +3,8 @@
     height: calc(100vh - var(--navbar-height));
     padding: 8px 8px 8px 18px;
     background: var(--bg-color-primary);
-    border: 1px solid white;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     width: 220px;
     transition: width 700ms ease;
 }
@@ -16,9 +17,12 @@
     padding: 3px;
     border-radius: 8px;
     background: var(--bg-color-secondary);
+    &:hover {
+        background-color: var(--bg-color-accent);
+    }
 }
 .collapsed {
-    width: 60px;
+    width: 70px;
 }
 
 .ItemsList {

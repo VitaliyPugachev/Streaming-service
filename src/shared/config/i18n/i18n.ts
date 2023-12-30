@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import en from './locales/eng/translation.json';
 import ru from './locales/ru/translation.json';
+import Backend from 'i18next-http-backend';
 
 const defaultLanguage = 'en';
 
@@ -17,7 +18,8 @@ export const resources = {
     },
 };
 
-i18n.use(LanguageDetector)
+i18n.use(Backend)
+    .use(LanguageDetector)
     .use(initReactI18next).init({
         defaultNS: defaultNamespace,
         ns: [defaultNamespace],

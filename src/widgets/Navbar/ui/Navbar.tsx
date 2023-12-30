@@ -10,10 +10,11 @@ export function Navbar() {
 
     return (
         <div className={cls.Navbar}>
-            <div className={cls.toggle_sidebar}>
-                {t('SomeText')}
+            <div className={cls.logo}>
+                <Logo />
+                {'Movie Hub'}
             </div>
-            <Logo />
+
             <Search />
             <LanguageSwitcher />
             <ThemeSwitcher />

@@ -2,5 +2,21 @@
   "SomeText": "SomeText",
   "LANGUAGE": "EN",
   "About": "About",
-  "Main": "Main"
+  "Main": "Main",
+  "EN": "EN",
+  "Популярное": "Popular",
+  "Год": "Year",
+  "Режиссер": "Director",
+  "Жанр": "Genre",
+  "Страна": "Country",
+  "Актеры": "Actors",
+  "Описание": "Description",
+  "Главная": "Main",
+  "Боевик": "Action",
+  "Фэнтези": "Fantasy",
+  "Комедия": "Comedy",
+  "Приключения": "Adventures",
+  "Ужасы": "Horror",
+  "Исторический": "History",
+  "Криминал": "Criminal"
 }

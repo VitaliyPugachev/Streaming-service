@@ -1,5 +1,4 @@
 import cls from './MoviesSelection.module.scss';
-import {MoviesList} from "../../model/types/moviesList";
 import {MovieCardSchema} from "../../model/types/movieCard";
 import {MovieSectionItem} from "../MovieSectionItem/MovieSectionItem";
 import {Loader} from "../../../../shared/ui/Loader/Loader";
@@ -8,13 +7,15 @@ interface MoviesSelectionProps {
     moviesList?: MovieCardSchema[];
     isLoading?: boolean;
     error?: string;
+    title?: string
 }
 
 export const MoviesSelection = (props: MoviesSelectionProps) => {
     const {
         moviesList,
         isLoading,
-        error
+        error,
+        title
     } = props;
 
     if (!moviesList) {
@@ -33,10 +34,13 @@ export const MoviesSelection = (props: MoviesSelectionProps) => {
 
 
     return (
-        <div className={cls.MoviesSelection}>
-            {moviesList.map((movie) => (
-                <MovieSectionItem movie={movie}/>
-            ))}
+        <div>
+            {title && (<h2 className={cls.title}>{title}</h2>)}
+            <div className={cls.MoviesSelection}>
+                {moviesList.map((movie) => (
+                    <MovieSectionItem movie={movie}/>
+                ))}
+            </div>
         </div>
     )
 }

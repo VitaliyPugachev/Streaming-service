@@ -1,9 +1,16 @@
 .Navbar {
     display: flex;
     align-items: center;
-    border: 2px solid ;
+    border-bottom: 2px solid black;
     padding: 10px;
     height: var(--navbar-height);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 

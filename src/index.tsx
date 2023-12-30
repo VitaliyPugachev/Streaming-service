@@ -11,13 +11,13 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 root.render(
-    <StoreProvider>
-        <React.StrictMode>
-            <ThemeProvider>
-                <BrowserRouter>
+    <BrowserRouter>
+        <StoreProvider>
+            <React.StrictMode>
+                <ThemeProvider>
                     <App />
-                </BrowserRouter>
-            </ThemeProvider>
-        </React.StrictMode>
-    </StoreProvider>
+                </ThemeProvider>
+            </React.StrictMode>
+        </StoreProvider>
+    </BrowserRouter>
 );

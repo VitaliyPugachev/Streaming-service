@@ -1,8 +1,9 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import axios from "axios";
+import {MovieCardSchema} from "../../types/movieCard";
 
-export const fetchMovieInfo = createAsyncThunk<any, string>(
-    'movie.ts/fetchMovieById',
+export const fetchMovieInfo = createAsyncThunk<MovieCardSchema, string>(
+    'movie.ts/fetchMovieById.ts',
     async (id) => {
 
         try {

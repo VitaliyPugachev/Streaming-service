@@ -29,9 +29,9 @@ export function Sidebar() {
                 className={cls.collapse_btn}
             >
                 {collapsed ?
-                    <RightArrow />
+                    <RightArrow width={22} height={22}/>
                     :
-                    <LeftArrow width={30} height={30}/>
+                    <LeftArrow width={22} height={22}/>
                 }
             </div>
         </div>

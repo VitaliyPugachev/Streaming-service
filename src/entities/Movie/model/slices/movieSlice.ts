@@ -1,12 +1,16 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {fetchMovieInfo} from "../services/fetchMovieInfo/fetchMovieInfo";
-import {Movie} from "../types/movie";
+import {MovieInfo} from "../types/movie";
 
 
-const initialState: Movie = {
+const initialState: MovieInfo = {
     error: '',
     isLoading: false,
-    data: {},
+    data: {
+        id: '',
+        year: '',
+        title: '',
+    },
 }
 
 export const movieSlice = createSlice({
@@ -18,7 +22,7 @@ export const movieSlice = createSlice({
     extraReducers: (builder => {
         builder.addCase(fetchMovieInfo.pending, (state) => {
             state.isLoading = true;
-            state.error = undefined;
+            state.error = '';
         })
         builder.addCase(fetchMovieInfo.fulfilled, (state, action) => {
             state.isLoading = false;

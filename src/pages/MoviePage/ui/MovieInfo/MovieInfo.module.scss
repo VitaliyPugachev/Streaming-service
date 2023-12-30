@@ -1,0 +1,33 @@
+.MovieInfo {
+    padding: 20px 50px;
+    width: 100%;
+}
+
+.infoWrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    & h2 {
+        margin-bottom: 20px;
+    }
+    & span {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.poster {
+    & img {
+        max-height: 80vh;
+    }
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+}
