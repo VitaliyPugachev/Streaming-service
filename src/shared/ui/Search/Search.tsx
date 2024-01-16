@@ -7,6 +7,5 @@ export const Search = memo(() => (
     <div className={cls.Search}>
         <Input placeholder="Поиск" />
         <SearchIcon width={25 } />
-
     </div>
 ));

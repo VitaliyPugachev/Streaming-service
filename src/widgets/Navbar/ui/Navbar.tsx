@@ -11,7 +11,7 @@ export function Navbar() {
     return (
         <div className={cls.Navbar}>
             <div className={cls.logo}>
-                <Logo />
+                <Logo text={'MSH'}/>
                 {'Movie Hub'}
             </div>
 

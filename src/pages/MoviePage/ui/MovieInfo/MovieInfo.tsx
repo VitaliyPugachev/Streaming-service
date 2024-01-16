@@ -41,7 +41,7 @@ const MovieInfo = () => {
     }
 
     return (
-        <div className={cls.MovieInfo}>
+        <div className={cls.MovieInfo} key={movie?.id}>
             <div className={cls.infoWrapper}>
                 <div className={cls.poster}>
                     <img src={movie.poster} alt={movie.title}/>

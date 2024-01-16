@@ -7,19 +7,23 @@ import {StateSchema} from "../../../app/providers/storeProvider/store/store";
 import {fetchMovieListByGenre} from "../model/services/fetchMovieListByGenre/fetchMovieListByGenre";
 
 interface GenrePageProps {
-    genre: MovieGenre
+    genre: MovieGenre,
+    storybook?: boolean
 }
 
 const GenrePage = memo((props: GenrePageProps) => {
     const {
-        genre
+        genre,
+        storybook
     } = props;
 
     const dispatch = useAppDispatch();
     const {isLoading, error, data} = useSelector((state: StateSchema) => state.movieListByGenre);
 
     useEffect(() => {
-        dispatch(fetchMovieListByGenre(genre))
+        if (!storybook) {
+            dispatch(fetchMovieListByGenre(genre))
+        }
     }, [genre]);
 
     return (

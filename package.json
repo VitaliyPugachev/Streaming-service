@@ -5,7 +5,6 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.60",
@@ -31,6 +30,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:unit": "jest",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -45,6 +45,11 @@
       "plugin:storybook/recommended"
     ]
   },
+  "jest": {
+    "moduleNameMapper": {
+      "^axios$": "axios/dist/node/axios.cjs"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -58,6 +63,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
     "@storybook/addon-essentials": "^7.5.2",
     "@storybook/addon-interactions": "^7.5.2",
     "@storybook/addon-links": "^7.5.2",
@@ -67,15 +76,22 @@
     "@storybook/react": "^7.5.2",
     "@storybook/react-webpack5": "^7.5.2",
     "@storybook/testing-library": "^0.2.2",
+    "@testing-library/react": "^14.1.2",
     "@types/react-router": "^5.1.20",
     "@types/react-router-dom": "^5.3.3",
+    "babel-jest": "^29.7.0",
     "babel-plugin-named-exports-order": "^0.0.2",
     "concurrently": "^8.2.2",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-plugin-storybook": "^0.6.15",
+    "jest": "^27.5.1",
+    "msw": "^2.1.0",
     "prop-types": "^15.8.1",
+    "react-test-renderer": "^18.2.0",
+    "redux-mock-store": "^1.5.4",
     "storybook": "^7.5.2",
+    "storybook-addon-react-router-v6": "^2.0.10",
     "webpack": "^5.89.0"
   }
 }

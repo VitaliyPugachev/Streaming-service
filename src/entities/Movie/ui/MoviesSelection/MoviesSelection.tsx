@@ -34,8 +34,8 @@ export const MoviesSelection = (props: MoviesSelectionProps) => {
 
 
     return (
-        <div>
-            {title && (<h2 className={cls.title}>{title}</h2>)}
+        <div data-testid="movieSelection" key={title}>
+            {title && (<title className={cls.title}>{title}</title>)}
             <div className={cls.MoviesSelection}>
                 {moviesList.map((movie) => (
                     <MovieSectionItem movie={movie}/>
