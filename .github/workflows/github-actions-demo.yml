@@ -1,13 +1,16 @@
 name: Tests
 on: [push]
 jobs:
-  Run react testing library:
+  pipeline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '20.10'
-      - run: npm i
-      - run: npm run test
-      - run: npm run lint
+      - name: Initialization
+        run: npm i
+      - name: Tests
+        run: npm run test
+      - name: Linter
+        run: npm run lint
