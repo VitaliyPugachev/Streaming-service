@@ -7,7 +7,7 @@ interface LogoProps {
 }
 
 export const Logo = memo(({text}: LogoProps) => (
-    <div className={cls.logo} data-test={'logo'}>
+    <div className={cls.logo} data-testid="logo">
         <MainLogo height={25} width={25} />
         <span>{text}</span>
     </div>

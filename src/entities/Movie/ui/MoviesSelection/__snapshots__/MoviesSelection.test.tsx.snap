@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MoviesSelection visualization is not changed 1`] = `
+exports[`MoviesSelection element had been rendered in DOM, ui didnt change 1`] = `
 <section
   data-testid="movieSelection"
 >

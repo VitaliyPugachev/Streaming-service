@@ -1,7 +1,6 @@
 import {render, screen} from "@testing-library/react";
 import {MoviesSelection} from "./MoviesSelection";
 import {MovieCardSchema} from "../../model/types/movieCard";
-import {unmountComponentAtNode} from "react-dom";
 
 jest.mock('react-router-dom');
 
@@ -33,18 +32,12 @@ describe('MoviesSelection', () => {
         },
     ];
 
-    beforeEach(() => {
+
+
+    test('element had been rendered in DOM, ui didnt change', () => {
         render(<MoviesSelection title={'popular'} isLoading={false} moviesList={moviesList}/>);
-    })
-
-
-    test('element had been rendered in DOM', () => {
         const element = screen.getByTestId('movieSelection');
         expect(element).toBeInTheDocument();
-    });
-    test('visualization is not changed', () => {
-        const element = screen.getByTestId('movieSelection');
         expect(element).toMatchSnapshot();
     });
-
 })

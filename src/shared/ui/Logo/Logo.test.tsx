@@ -1,38 +1,16 @@
-import {render, unmountComponentAtNode} from "react-dom";
-
-import {act} from "react-dom/test-utils";
+import {render} from "@testing-library/react";
 import {Logo} from "./Logo";
-
-type ContainerType = Element | null;
-
-let container: ContainerType = null;
-beforeEach(() => {
-    // подготавливаем DOM-элемент, куда будем рендерить
-    container = document.createElement("div");
-    document.body.appendChild(container);
-});
-
-afterEach(() => {
-    // подчищаем после завершения
-    if (container) {
-        unmountComponentAtNode(container);
-        container.remove();
-        container = null;
-    }
-});
+import {screen} from "@testing-library/react";
 
 describe('Logo', () => {
-    test('get element by text content', () => {
-        act(() => {
-            render(<Logo text={'MSH'}/>, container);
-        })
-        expect(container?.querySelector('span')?.textContent).toEqual('MSH');
+    test('Text content', () => {
+        render(<Logo text={'MSH'}/>);
+        const element = screen.getByText('MSH')
+        expect(element.textContent).toEqual('MSH');
     });
     test('element rendered in DOM', () => {
-        act(() => {
-            render(<Logo text={'MSH'}/>, container);
-        })
-        expect(container?.querySelector('div[data-test="logo"]')).toBeInTheDOM();
+        render(<Logo text={'MSH'}/>);
+        const element = screen.getByTestId('logo')
+        expect(element).toBeInTheDOM();
     })
-
 })

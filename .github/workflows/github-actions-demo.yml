@@ -1,7 +1,7 @@
 name: Tests
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Run react testing library:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -9,4 +9,7 @@ jobs:
         with:
           node-version: '20.10'
       - run: npm i
-      - run: npm run test
+      - name: React testing library
+        run: npm run test
+      - name: Linter
+        run: npm run lint
