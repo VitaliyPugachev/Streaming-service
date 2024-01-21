@@ -9,7 +9,5 @@ jobs:
         with:
           node-version: '20.10'
       - run: npm i
-      - name: React testing library
-        run: npm run test
-      - name: Linter
-        run: npm run lint
+      - run: npm run test
+      - run: npm run lint
