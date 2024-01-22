@@ -18,6 +18,7 @@ export function Sidebar() {
                 {
                     SidebarItemsList.map(item =>
                         <SidebarItem
+                            key={item.path}
                             item={item}
                             collapsed={collapsed}
                         />

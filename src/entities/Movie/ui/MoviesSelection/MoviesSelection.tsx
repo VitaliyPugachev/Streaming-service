@@ -34,11 +34,11 @@ export const MoviesSelection = (props: MoviesSelectionProps) => {
 
 
     return (
-        <section data-testid="movieSelection" key={title}>
-            {title && (<title className={cls.title}>{title}</title>)}
+        <section data-testid="movieSelection" >
+            {title && (<h2 className={cls.title}>{title}</h2>)}
             <div className={cls.MoviesSelection}>
                 {moviesList.map((movie) => (
-                    <MovieSectionItem movie={movie}/>
+                    <MovieSectionItem movie={movie} key={movie.title}/>
                 ))}
             </div>
         </section>

@@ -7,5 +7,8 @@ export default {
     component: Logo,
 } as Meta;
 
-export const Primary: Story = () => <Logo />;
+export const Primary: Story = (args) => <Logo text={''} {...args} />;
+Primary.args = {
+    text: 'MSH'
+}
 
