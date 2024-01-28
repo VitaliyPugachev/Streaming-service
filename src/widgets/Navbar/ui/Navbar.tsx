@@ -2,8 +2,8 @@ import { Logo } from 'shared/ui/Logo/Logo';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from 'shared/ui/LanguageSwitcher/LanguageSwitcher';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
-import { Search } from 'shared/ui/Search/Search';
 import cls from './Navbar.module.scss';
+import {SearchMovieByTitle} from "../../../features/fetchMovieTitles/ui/SearchMovieByTitle";
 
 export function Navbar() {
     const { t } = useTranslation();
@@ -15,7 +15,7 @@ export function Navbar() {
                 {'Movie Hub'}
             </div>
 
-            <Search />
+            <SearchMovieByTitle/>
             <LanguageSwitcher />
             <ThemeSwitcher />
         </div>

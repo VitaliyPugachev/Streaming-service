@@ -6,6 +6,7 @@ import {fetchMovieList} from "../../../entities/Movie/model/services/fetchMovieL
 import {MoviesSelection} from "../../../entities/Movie";
 import cls from './MainPage.module.scss';
 import {useTranslation} from "react-i18next";
+import {fetchMovieTitles} from "../../../features/fetchMovieTitles/model/services/fetchMovieTitles";
 
 export const MainPage = memo(() => {
 

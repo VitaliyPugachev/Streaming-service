@@ -1,8 +1,9 @@
 import * as React from "react";
 import {StoreProvider} from "../../../../app/providers/storeProvider";
+import {StateSchema} from "../../../../app/providers/storeProvider/store/store";
 
 
-const initialState = {
+const initialState: StateSchema = {
     movieListByGenre: {
         data: [
             {
@@ -85,6 +86,9 @@ const initialState = {
         isLoading: false,
         error: ''
     },
+    movieTitles: {
+        titles: ['Аватар', 'Начало']
+    }
 }
 
 export const StoreDecorator = () => (Story: any) => (
