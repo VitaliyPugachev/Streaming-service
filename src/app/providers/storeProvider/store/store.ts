@@ -6,12 +6,15 @@ import {MoviesList} from "../../../../entities/Movie/model/types/moviesList";
 import {movieListReducer} from "../../../../entities/Movie/model/slices/movieListSlice";
 import {movieInfoReducer} from "../../../../pages/MoviePage/model/slices/movieInfoSlice";
 import {movieListByGenreReducer} from "../../../../pages/GenrePage/model/slices/GenrePageSlice";
+import {movieTitles, movieTitlesReducer} from "../../../../features/fetchMovieTitles/model/slices/movieTitlesSlice";
+import {MovieTitles} from "../../../../features/fetchMovieTitles/model/types/titleSchema";
 
 export interface StateSchema {
     // movie: MovieInfo;
     movieList: MoviesList;
     movieInfoPage: MovieInfo;
     movieListByGenre: MoviesList;
+    movieTitles: MovieTitles;
 }
 
 export function createReduxStore(initialState?: StateSchema) {
@@ -20,7 +23,8 @@ export function createReduxStore(initialState?: StateSchema) {
             // movie: movieReducer,
             movieList: movieListReducer,
             movieInfoPage: movieInfoReducer,
-            movieListByGenre: movieListByGenreReducer
+            movieListByGenre: movieListByGenreReducer,
+            movieTitles: movieTitlesReducer
         },
         preloadedState: initialState || {}
     })

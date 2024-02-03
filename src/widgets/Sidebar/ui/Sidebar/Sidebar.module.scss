@@ -1,6 +1,6 @@
 .Sidebar {
     position: relative;
-    height: calc(100vh - var(--navbar-height));
+    //height: calc(100vh - var(--navbar-height));
     padding: 8px 8px 8px 18px;
     background: var(--bg-color-primary);
     border-right: 2px solid black;
@@ -12,7 +12,8 @@
 .collapse_btn {
     cursor: pointer;
     position: absolute;
-    top: calc(50% - 15px);
+    //top: calc(50% - 15px);
+    top: 50vh;
     right: -15px;
     padding: 3px;
     border-radius: 8px;

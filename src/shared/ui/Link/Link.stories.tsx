@@ -1,4 +1,4 @@
-import {Search} from "../Search/Search";
+import {Search} from "../../../features/fetchMovieTitles/ui/Search/Search";
 import {Meta, Story} from "@storybook/react";
 import {ThemeDecorator} from "../../config/storybook/ThemeDecorator/ThemeDecorator";
 import {Theme} from "../../../app/providers/themeProvider/themeContext";
