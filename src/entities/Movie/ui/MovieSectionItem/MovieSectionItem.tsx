@@ -22,7 +22,7 @@ export const MovieSectionItem = memo(({movie}: MovieSectionItemProps) => {
     },[isHover])
 
     return (
-        <Link to={`/movies/${movie.id}`}>
+        <NavLink to={`/movies/${movie.id}`}>
             <div
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
@@ -48,6 +48,6 @@ export const MovieSectionItem = memo(({movie}: MovieSectionItemProps) => {
                     </div>
                 </div>
             </div>
-        </Link>
+        </NavLink>
     )
 });

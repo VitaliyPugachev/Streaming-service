@@ -1,7 +1,7 @@
-import {RatingIcon} from "../../shared/ui/RatingIcon/RatingIcon";
+import {RatingIcon} from "../../../../shared/ui/RatingIcon/RatingIcon";
 import {Meta, Story} from "@storybook/react";
-import {ThemeDecorator} from "../../shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import {Theme} from "../../app/providers/themeProvider/themeContext";
+import {ThemeDecorator} from "../../../../shared/config/storybook/ThemeDecorator/ThemeDecorator";
+import {Theme} from "../../../../app/providers/themeProvider/themeContext";
 import * as React from "react";
 import {Search} from "./Search";
 

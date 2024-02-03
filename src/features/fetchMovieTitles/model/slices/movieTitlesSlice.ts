@@ -1,12 +1,8 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {MoviesList} from "entities/Movie/model/types/moviesList";
+import {createSlice} from "@reduxjs/toolkit";
 import {fetchMovieTitles} from "../services/fetchMovieTitles";
+import {MovieTitles} from "../types/titleSchema";
 
-export interface movieTitles {
-    titles: string[] | undefined
-}
-
-const initialState: movieTitles = {
+const initialState: MovieTitles = {
     titles: []
 }
 

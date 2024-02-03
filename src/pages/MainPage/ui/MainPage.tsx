@@ -6,7 +6,7 @@ import {fetchMovieList} from "../../../entities/Movie/model/services/fetchMovieL
 import {MoviesSelection} from "../../../entities/Movie";
 import cls from './MainPage.module.scss';
 import {useTranslation} from "react-i18next";
-import {fetchMovieTitles} from "../../../features/fetchMovieTitles/model/services/fetchMovieTitles";
+
 
 export const MainPage = memo(() => {
 
@@ -20,7 +20,9 @@ export const MainPage = memo(() => {
 
     return (
         <div className={cls.MainPage}>
-            <MoviesSelection isLoading={isLoading} error={error} moviesList={data} title={t('Популярное')}/>
+            <MoviesSelection isLoading={isLoading} error={error} moviesList={data} title={t('Популярное')} carousel={true}/>
+            <MoviesSelection isLoading={isLoading} error={error} moviesList={data} title={t('Новинки')} carousel={true}/>
+            <MoviesSelection isLoading={isLoading} error={error} moviesList={data} title={t('С высоким рейтингом')} carousel={true}/>
         </div>
     );
 })

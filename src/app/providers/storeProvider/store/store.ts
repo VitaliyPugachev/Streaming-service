@@ -7,13 +7,14 @@ import {movieListReducer} from "../../../../entities/Movie/model/slices/movieLis
 import {movieInfoReducer} from "../../../../pages/MoviePage/model/slices/movieInfoSlice";
 import {movieListByGenreReducer} from "../../../../pages/GenrePage/model/slices/GenrePageSlice";
 import {movieTitles, movieTitlesReducer} from "../../../../features/fetchMovieTitles/model/slices/movieTitlesSlice";
+import {MovieTitles} from "../../../../features/fetchMovieTitles/model/types/titleSchema";
 
 export interface StateSchema {
     // movie: MovieInfo;
     movieList: MoviesList;
     movieInfoPage: MovieInfo;
     movieListByGenre: MoviesList;
-    movieTitles: movieTitles;
+    movieTitles: MovieTitles;
 }
 
 export function createReduxStore(initialState?: StateSchema) {

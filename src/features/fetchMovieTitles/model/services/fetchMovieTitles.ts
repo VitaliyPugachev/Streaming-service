@@ -1,6 +1,7 @@
 import {createAsyncThunk} from "@reduxjs/toolkit";
 import {MovieCardSchema} from "../../../../entities/Movie";
 import axios from "axios";
+import {MovieTitles, TitleSchema} from "../types/titleSchema";
 
 
 export const fetchMovieTitles = createAsyncThunk(
@@ -14,10 +15,15 @@ export const fetchMovieTitles = createAsyncThunk(
                 console.log('fetchMovieTitles fetching error')
             }
 
-            const titles: string[] = [];
+            const titles: TitleSchema[] = [];
 
             response.data.forEach(movie => {
-                titles.push(movie.title);
+                titles.push(
+                    {
+                        title: movie.title,
+                        id: movie.id
+                    }
+                );
             })
 
             return titles;

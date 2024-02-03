@@ -87,7 +87,7 @@ const initialState: StateSchema = {
         error: ''
     },
     movieTitles: {
-        titles: ['Аватар', 'Начало']
+        titles: [{title: 'Аватар', id: '1'}, {title: 'Начало', id: '7'}]
     }
 }
 

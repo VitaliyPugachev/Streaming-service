@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from 'shared/ui/LanguageSwitcher/LanguageSwitcher';
 import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher/ThemeSwitcher';
 import cls from './Navbar.module.scss';
-import {SearchMovieByTitle} from "../../../features/fetchMovieTitles/ui/SearchMovieByTitle";
+import {SearchMovieByTitle} from "../../../features/fetchMovieTitles/ui/SearchMovieByTitle/SearchMovieByTitle";
+import {ListBox} from "../../../shared/ui/ListBox/ListBox";
 
 export function Navbar() {
     const { t } = useTranslation();
@@ -14,7 +15,6 @@ export function Navbar() {
                 <Logo text={'MSH'}/>
                 {'Movie Hub'}
             </div>
-
             <SearchMovieByTitle/>
             <LanguageSwitcher />
             <ThemeSwitcher />
