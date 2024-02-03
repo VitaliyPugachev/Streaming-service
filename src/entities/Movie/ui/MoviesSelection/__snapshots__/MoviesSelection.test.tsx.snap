@@ -4,11 +4,11 @@ exports[`MoviesSelection element had been rendered in DOM, ui didnt change 1`] =
 <section
   data-testid="movieSelection"
 >
-  <title
+  <h2
     class="title"
   >
     popular
-  </title>
+  </h2>
   <div
     class="MoviesSelection"
   />
